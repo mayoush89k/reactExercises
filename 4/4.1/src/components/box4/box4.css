@@ -1,0 +1,18 @@
+#box4-1{
+    background-color: plum;
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    display: block;
+}
+#box4-2{
+    background-color: plum;
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+    display: block;
+}
