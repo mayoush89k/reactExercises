@@ -1,0 +1,12 @@
+#box{
+    border: 1px solid gray;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 10px 50px;
+}
+
+#main-container{
+    width: 200px;
+    height: 200px;
+}
