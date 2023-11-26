@@ -1,0 +1,15 @@
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+
+#red, #blue,#yellow{
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
