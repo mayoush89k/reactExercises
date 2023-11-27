@@ -1,0 +1,44 @@
+#turtle-card {
+  padding: 0;
+  margin: 5px;
+  width: 25%;
+  background-color: burlywood;
+  border: 1px solid black;
+}
+
+#turtle-card img {
+  width: 100%;
+}
+
+#topping {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#topping button:hover {
+    color: red;
+    opacity: 0.5;
+}
+#topping button {
+  margin: 5px;
+  font-weight: bold;
+}
+#full,
+#order-card{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: tomato;
+    border-radius: 10px;
+    width: 100px;
+}
+#full img,
+#order-card img {
+    width: 100%;
+    border-radius: 50%;
+    max-height: 90px;
+}
+#full{
+    background-color: red;
+    color: black;
+}
