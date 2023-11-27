@@ -19,7 +19,7 @@ const data = [
     pizzaToppings: [
       {
         name: "Extra Cheese",
-        img: "https://i0.wp.com/pizzavisa.in/wp-content/uploads/2022/02/mozrella-cheese.webp",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWeBcdACq78qd9ficsOcNqM7-fqMXOrRYncOn2uY4QA&s",
       },
       {
         name: "Peppers",
