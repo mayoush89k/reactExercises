@@ -1,0 +1,41 @@
+.box1{
+    background-color: lightgreen;
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    margin-top: 20px;
+}
+.box2{
+    background-color: lightblue;
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+}
+.box3{
+    background-color: pink;
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+}
+.box4{
+    background-color: plum;
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    display: block;
+}
+.box5{
+    background-color: plum;
+    width: 50vw;
+    height: 20vh;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+    display: block;
+}
