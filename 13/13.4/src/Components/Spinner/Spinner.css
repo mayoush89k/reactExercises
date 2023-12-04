@@ -1,0 +1,203 @@
+#container {
+  /* height: 500px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.items {
+  margin: 50px;
+}
+
+/* 3 scaling dots - on the right side of the screen */
+#three-scaling-dots,
+#three-scaling-dots::after,
+#three-scaling-dots::before {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 50%;
+  content: "";
+}
+#three-scaling-dots {
+  position: relative;
+  margin : 50px;
+  /* animation: scale-dot2 2s alternate-reverse infinite; */
+}
+#three-scaling-dots::before {
+  position: absolute;
+  transform: translate(-21px, 0px);
+  animation: scale-dot1 2s alternate-reverse infinite;
+}
+#three-scaling-dots::after {
+  position: absolute;
+  transform: translate(21px, 0);
+  animation: scale-dot3 2s alternate-reverse infinite;
+}
+
+@keyframes scale-dot1 {
+  from {
+    transform: translate(-40px, 0px) scale(0);
+  }
+  to {
+    transform: translate(-40px, 0px) scale(1);
+  }
+}
+
+@keyframes scale-dot2 {
+  0% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-dot3 {
+  from {
+    transform: translate(21px, 0px) scale(1);
+  }
+  to {
+    transform: translate(21px, 0px) scale(0);
+  }
+}
+
+/* changing colors of three dots */
+#three-dots,
+#three-dots::after,
+#three-dots::before {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 50%;
+  content: "";
+}
+#three-dots {
+  position: relative;
+  margin: 50px;
+  animation: color-dot2 1s infinite;
+}
+#three-dots::after {
+  position: absolute;
+  transform: translate(-40px, 0px);
+  animation: color-dot3 1s infinite;
+}
+#three-dots::before {
+  position: absolute;
+  transform: translate(21px, 0);
+  animation: color-dot1 1s infinite;
+}
+
+@keyframes color-dot2 {
+  0% {
+    background-color: gray;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+@keyframes color-dot1 {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: grey;
+  }
+  100% {
+    background-color: gray;
+  }
+}
+@keyframes color-dot3 {
+  0% {
+    background-color: grey;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+/* rotating ring - on the left side of the screen */
+#rotating-ring,
+#rotating-ring::after {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+#rotating-ring {
+  background-color: black;
+  position: relative;
+}
+
+#rotating-ring::after {
+  position: absolute;
+  border: 5px outset grey;
+  left: -5px;
+  top: -5px;
+  animation: rotate-ring 6s linear infinite;
+}
+
+@keyframes rotate-ring {
+  from {
+    transform: rotate(1turn);
+  }
+  to {
+    transform: rotate(-2turn);
+  }
+}
+
+/* rotating fire on second circle */
+#rotating-fire,
+#rotating-fire::after {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+#rotating-fire {
+  border: 5px solid black;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+#rotating-fire::after {
+  z-index: -10px;
+  position: absolute;
+  border: 5px solid orange; /* ridge */
+  left: -5px;
+  top: -5px;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-3px, -3px) rotate(1turn);
+  }
+  25% {
+    transform: translate(-3px, 0px) rotate(-2turn);
+  }
+  50% {
+    transform: translate(0px, 3px) rotate(1turn);
+  }
+  100% {
+    transform: translate(3px, 3px) rotate(-2turn);
+  }
+}
+
+@media (max-width : 500px) {
+ #container{
+    flex-direction: column;
+ }   
+}
