@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.box{
+  width: 500px;
+  height: 500px;
+}
+
+#red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+#blue {
+  background-color: blue;
+}
+#yellow {
+  background-color: yellow;
+}
+#gray {
+  background-color: gray;
+}
+
+#roundRadius{
+  background-color: gray;
+  border-radius: 50%;
+}
