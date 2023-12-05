@@ -1,0 +1,29 @@
+#list{
+    background-color: aqua;
+    box-shadow: 10px 10px 10px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;    
+
+}
+
+.todo-card{
+    border: 1px solid black;
+    list-style: none;
+    border-radius: 10px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 85%;
+}
+
+.todo-card,
+h1,
+button,
+input{
+    margin: 10px;
+    padding: 10px;
+}
