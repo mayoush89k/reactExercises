@@ -19,6 +19,7 @@ function App() {
     // clean up the timer, do deactivate it
     return () => {
       setIndex(0);
+      setActivate(true)
     };
   }, [index]);
 
