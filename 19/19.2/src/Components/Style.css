@@ -1,0 +1,47 @@
+#dark{
+    color: peru;
+    background-color: rgb(39, 39, 39);
+}
+
+#light{
+    background-color: bisque;
+    color: black;
+}
+
+.pages{
+    min-height: 98vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+#menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+#menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    gap: 20px;
+}
+.menu-item{
+    list-style: none;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+#dark-menu{
+    color: white;
+    background-color: black;
+}
+#light-menu{
+    color: black;
+    background-color: grey;
+}
